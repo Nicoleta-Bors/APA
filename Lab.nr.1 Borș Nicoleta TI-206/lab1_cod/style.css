@@ -1,0 +1,26 @@
+body,
+html {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(216, 148, 233, 1) 100%);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body div {
+  text-align: center;
+  background: linear-gradient(45deg, #b23bcf, #af4261);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
