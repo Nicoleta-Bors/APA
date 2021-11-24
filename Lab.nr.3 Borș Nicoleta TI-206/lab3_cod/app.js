@@ -116,7 +116,7 @@ const kruskal = (graf) => {
       b = -1;
     for (let i = 0; i < n; i++) {
       for (let j = 0; j < n; j++) {
-        if (find(i, parent) != find(j, parent) && graf[i][j] < min) {
+        if (graf[i][j] < min && find(i, parent) != find(j, parent)) {
           min = graf[i][j];
           a = i;
           b = j;
@@ -177,17 +177,17 @@ const prim = (graf) => {
 };
 // ----------------------------------------------------------------
 
-// unGraf();
+unGraf();
 // citireGraf();
 
-n = 10;
+// n = 10;
 // grafDens();
-grafRar();
+// grafRar();
 // console.log(graf);
 
 const startTime = window.performance.now();
-kruskal(graf);
-// prim(graf);
+// kruskal(graf);
+prim(graf);
 const endTime = window.performance.now();
 
 console.log(
